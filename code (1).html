@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-bright": "#f7f9fb", "surface-tint": "#565e74", "tertiary-fixed": "#6ffbbe", "surface-white": "#FFFFFF", "error-container": "#ffdad6", "status-warning": "#F59E0B", "surface-dim": "#d8dadc", "inverse-primary": "#bec6e0", "border-subtle": "#E2E8F0", "tertiary-fixed-dim": "#4edea3", "inverse-surface": "#2d3133", "on-surface": "#191c1e", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#3f465c", "on-tertiary-fixed": "#002113", "primary-fixed-dim": "#bec6e0", "secondary": "#4b41e1", "inverse-on-surface": "#eff1f3", "primary-fixed": "#dae2fd", "on-error-container": "#93000a", "surface": "#f7f9fb", "on-primary-container": "#7c839b", "on-tertiary-fixed-variant": "#005236", "background": "#f7f9fb", "on-secondary-container": "#fffbff", "surface-container-low": "#f2f4f6", "surface-container-highest": "#e0e3e5", "secondary-fixed": "#e2dfff", "tertiary": "#000000", "on-primary": "#ffffff", "on-tertiary-container": "#009668", "secondary-container": "#645efb", "on-error": "#ffffff", "outline-variant": "#c6c6cd", "on-secondary": "#ffffff", "surface-container-high": "#e6e8ea", "secondary-fixed-dim": "#c3c0ff", "tertiary-container": "#002113", "on-surface-variant": "#45464d", "on-tertiary": "#ffffff", "outline": "#76777d", "on-background": "#191c1e", "primary-container": "#131b2e", "surface-container": "#eceef0", "on-secondary-fixed-variant": "#3323cc", "primary": "#000000", "on-secondary-fixed": "#0f0069", "on-primary-fixed": "#131b2e", "status-danger": "#EF4444", "error": "#ba1a1a", "surface-variant": "#e0e3e5", "text-muted": "#64748B" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-md": "1rem", "margin": "1.5rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin-mobile": "1rem", "gutter": "1rem", "space-xs": "0.25rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "stat-counter": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "600" }], "stat-counter": ["36px", { "lineHeight": "44px", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="flex items-center justify-center min-w-[44px] min-h-[44px] rounded-full hover:bg-surface-container transition-colors text-on-surface" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Attendly Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCCirgZJhjfuD5vvtIFQKJMZwjTNg9h2vCBcQrFFaIvyYP0_QbQx4d4hSf0Ucv-vEZ7YstRSkrhuQU9LdDlzS1nsYCir8_ZBpiJH2hV9MSQB_NKJ4H0UHc2aDaYT52KB07RNfe-YqBGnwRd6BPamdt2_p5YlUvsEAZl3qZ0r6hGpgMCHsoOTAlROwKa8-9SIA9IJC2mWdY332_NnL0pQGWBx8aj-fHZ7sxyWIsS1Hs"/><h1 class="font-headline-md text-headline-md tracking-tight text-on-surface">Check In</h1></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQDQDtPMAAlNmxPl_sucO2SNuEoojw-3FxHHkLs-_nBBjX_m_UxXHA_U1Z13iS4yftdBeXEC18Y5TNetgWq1-8fUEuYIqKOrgJ3MUwyqEZ0pw4ApgufcwxBOCibal15D76vvGXf9nEZtcsq4uf7tbatOa7d4_5xYVqQ-0kBULDJGvXxo3B8tkRwZVTKzwP5-uwX2LWjb2MqhzKw7kSFxt8Ao4BRM6kylHyN5u3ig"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-space-xl">
+<!-- Course Header Context & Urgency Pill -->
+<div class="flex flex-col gap-space-xs mt-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-secondary">school</span>
+        Computer Science
+      </span>
+<!-- Urgent Countdown Badge -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-status-warning/15 text-status-warning shadow-sm" id="countdown-badge">
+<span class="material-symbols-outlined text-[16px] animate-spin" style="animation-duration: 4s;">hourglass_bottom</span>
+<span class="font-label-lg text-label-lg tracking-wider font-semibold" id="timer-display">06:18 remaining</span>
+</div>
+</div>
+<div class="mt-1">
+<h2 class="font-headline-lg text-headline-lg tracking-tight text-on-surface">CSC 201: Data Structures & Algorithms</h2>
+<p class="font-body-md text-body-md text-text-muted flex items-center gap-1.5 mt-0.5">
+<span>Dr. Adebayo</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] mr-0.5 text-secondary">meeting_room</span>
+          LT-2 Lecture Theater
+        </span>
+</p>
+</div>
+</div>
+<!-- Verification Card: 3-Step Anti-Fraud Verification System -->
+<div class="bg-surface-white rounded-xl shadow-md p-space-md mb-space-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Visual Accent Stripe -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-tertiary-fixed-dim via-secondary to-tertiary-fixed-dim"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<span class="font-title-md text-title-md text-on-surface">Proof-of-Presence Pipeline</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed font-label-sm text-label-sm">2 of 3 Complete</span>
+</div>
+<!-- Steps Stack -->
+<div class="flex flex-col gap-2.5">
+<!-- Step 1: Geofence Location (Passed) -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low transition-all">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-container shadow-xs">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Geofence Radius Check</span>
+<span class="font-body-sm text-body-sm text-on-tertiary-container font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+              Passed • Inside LT-2 Classroom (14m accuracy)
+            </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-white text-on-surface-variant shadow-xs">GPS Locked</span>
+</div>
+<!-- Step 2: Student Identity (Passed) -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low transition-all">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-container shadow-xs">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Device & Biometric Token</span>
+<span class="font-body-sm text-body-sm text-on-tertiary-container font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">badge</span>
+              Tunde Adeleke • BU/21/0492 Authenticated
+            </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-white text-on-surface-variant shadow-xs">Secured</span>
+</div>
+<!-- Step 3: Camera Verification (Active) -->
+<div class="flex items-start justify-between p-3 rounded-lg bg-secondary-fixed/25">
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-xs mt-0.5">
+<span class="material-symbols-outlined text-[16px] animate-pulse">videocam</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-secondary font-semibold">Live Camera Optical Verification</span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Visual optical validation required to prevent remote proxy signing.
+            </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-medium whitespace-nowrap">Active Step</span>
+</div>
+</div>
+</div>
+<!-- Interactive Live Viewfinder Container -->
+<div class="bg-surface-white rounded-xl shadow-md p-space-md mb-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">center_focus_strong</span>
+<h3 class="font-title-md text-title-md text-on-surface">Optical Presence Scanner</h3>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-secondary px-2 py-1 rounded-md bg-surface-container transition-colors min-h-[36px]" id="toggle-camera-btn">
+<span class="material-symbols-outlined text-[18px]">flip_camera_ios</span>
+<span class="font-label-sm text-label-sm">Switch</span>
+</button>
+</div>
+<!-- Viewfinder Screen Box -->
+<div class="relative w-full h-56 rounded-lg overflow-hidden bg-primary-container flex items-center justify-center shadow-inner group">
+<!-- Simulated Camera Live Stream / Background -->
+<div class="absolute inset-0 bg-cover bg-center opacity-85 scale-105 transition-transform duration-700" data-alt="Modern university lecture hall amphitheater viewed from a student desk perspective. Rows of tiered wooden desks, warm ambient classroom lights, students seated attentively, and a large illuminated chalkboard and digital projection screen displaying computer science code diagrams." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPHo2iA43lHYjMfVvj4ZRqoAYWMhGFPhwUyO4Rtp0UYABe3TzNsiwXDBTkkeYLPClZmQLsl1Qg_LD_CGrPhnGyB_sg4yJtCeh7ngnOqPR_8Vqj__rZMo-K0SB1fU98o5rs1MsSAf1b02yC4Sc98FCmAV6ZdLCL0mN94VjxtnzC1sWRmJtim0xIffpdFdg_FF13bOipjDftu_FiW_vPKdQ5Sux94Fz_mMg34jNkNw')">
+</div>
+<!-- Sci-Fi Grid Overlay -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary-container/40 via-transparent to-primary-container/70 pointer-events-none"></div>
+<!-- High-Tech Corner Viewfinder HUD Brackets -->
+<div class="absolute inset-4 pointer-events-none flex flex-col justify-between">
+<div class="flex justify-between w-full">
+<div class="w-6 h-6 border-t-2 border-l-2 border-tertiary-fixed rounded-tl-sm shadow-[0_0_8px_rgba(111,251,190,0.6)]"></div>
+<div class="w-6 h-6 border-t-2 border-r-2 border-tertiary-fixed rounded-tr-sm shadow-[0_0_8px_rgba(111,251,190,0.6)]"></div>
+</div>
+<!-- Center Target Reticle & Scan Line -->
+<div class="self-center flex flex-col items-center">
+<div class="w-24 h-24 rounded-full border border-dashed border-tertiary-fixed/60 flex items-center justify-center animate-[spin_12s_linear_infinite]" id="scanner-reticle">
+<div class="w-12 h-12 rounded-full border border-secondary-fixed/50 flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-tertiary-fixed shadow-[0_0_6px_#6ffbbe]"></div>
+</div>
+</div>
+<!-- Animated Radar Scan Line -->
+<div class="w-48 h-0.5 bg-gradient-to-r from-transparent via-tertiary-fixed to-transparent mt-2 shadow-[0_0_10px_#6ffbbe] animate-pulse"></div>
+</div>
+<div class="flex justify-between w-full">
+<div class="w-6 h-6 border-b-2 border-l-2 border-tertiary-fixed rounded-bl-sm shadow-[0_0_8px_rgba(111,251,190,0.6)]"></div>
+<div class="w-6 h-6 border-b-2 border-r-2 border-tertiary-fixed rounded-br-sm shadow-[0_0_8px_rgba(111,251,190,0.6)]"></div>
+</div>
+</div>
+<!-- Realtime Detection Tag -->
+<div class="absolute top-6 left-6 flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary/70 backdrop-blur-md text-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+<span>OBJECT: BOARD DETECTED (98.4%)</span>
+</div>
+<!-- Capture Confirmation Overlay (Initially Hidden) -->
+<div class="absolute inset-0 bg-primary/80 backdrop-blur-sm flex flex-col items-center justify-center gap-2 opacity-0 pointer-events-none transition-opacity duration-300" id="capture-success-overlay">
+<div class="w-14 h-14 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-container shadow-lg scale-90 transition-transform">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="text-surface-white font-title-md text-title-md">Presence Proof Captured</span>
+<span class="text-tertiary-fixed font-label-md text-label-md">SHA-256 #9f2a..83e1 Sealed</span>
+</div>
+</div>
+<!-- Instruction Subtitle -->
+<div class="flex items-center gap-2 px-1">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Point camera towards Lecturer or Classroom Board to confirm physical presence.
+      </p>
+</div>
+<!-- Capture Shutter Button -->
+<button class="w-full flex items-center justify-center gap-3 py-3 px-4 rounded-xl bg-surface-container-high hover:bg-surface-container-highest active:scale-[0.98] transition-all min-h-[48px] text-on-surface shadow-xs" id="capture-btn">
+<div class="w-6 h-6 rounded-full border-2 border-secondary flex items-center justify-center">
+<div class="w-3.5 h-3.5 rounded-full bg-secondary"></div>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Capture Presence Proof</span>
+</button>
+<!-- Alternative: Backup Attendance Session Code -->
+<div class="pt-2 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-muted uppercase tracking-wider">Or Enter Lecturer Screen Code</span>
+<span class="font-label-sm text-label-sm text-secondary">Optional Backup</span>
+</div>
+<!-- 6-digit Code Matrix Cells -->
+<div class="grid grid-cols-6 gap-2">
+<div class="h-12 bg-surface-container-low rounded-lg flex items-center justify-center font-display-lg text-headline-md text-on-surface font-bold shadow-xs">8</div>
+<div class="h-12 bg-surface-container-low rounded-lg flex items-center justify-center font-display-lg text-headline-md text-on-surface font-bold shadow-xs">4</div>
+<div class="h-12 bg-surface-container-low rounded-lg flex items-center justify-center font-display-lg text-headline-md text-on-surface font-bold shadow-xs">2</div>
+<div class="h-12 bg-surface-container-low rounded-lg flex items-center justify-center font-display-lg text-headline-md text-on-surface font-bold shadow-xs">9</div>
+<div class="h-12 bg-surface-container-low rounded-lg flex items-center justify-center font-display-lg text-headline-md text-on-surface font-bold shadow-xs">1</div>
+<div class="h-12 bg-surface-container-low rounded-lg flex items-center justify-center font-display-lg text-headline-md text-on-surface font-bold shadow-xs">0</div>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted text-center mt-1">
+        6-digit rolling token displayed on the auditorium projector.
+      </p>
+</div>
+</div>
+<!-- Primary Action Submission Area -->
+<div class="flex flex-col gap-3">
+<button class="w-full min-h-[52px] rounded-xl bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim active:scale-[0.98] font-title-md text-title-md flex items-center justify-center gap-2 shadow-lg transition-all duration-200" id="submit-btn">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">how_to_reg</span>
+<span>Submit Verified Attendance</span>
+</button>
+<!-- Cryptographic Legal & Security Disclaimer -->
+<div class="flex items-start gap-2.5 p-3 rounded-lg bg-surface-container-low text-text-muted">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant shrink-0 mt-0.5">lock_clock</span>
+<p class="font-body-sm text-body-sm leading-relaxed">
+        Attendance is cryptographically logged with GPS coordinates and device hardware ID to prevent proxy signing. Tampering triggers academic integrity flag.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  // Countdown Timer Logic
+  let totalSeconds = 6 * 60 + 18;
+  const timerDisplay = document.getElementById('timer-display');
+  const timerBadge = document.getElementById('countdown-badge');
+
+  const countdownInterval = setInterval(() => {
+    if (totalSeconds <= 0) {
+      clearInterval(countdownInterval);
+      if (timerDisplay) timerDisplay.textContent = '00:00 expired';
+      if (timerBadge) {
+        timerBadge.classList.remove('bg-status-warning/15', 'text-status-warning');
+        timerBadge.classList.add('bg-error/15', 'text-error');
+      }
+      return;
+    }
+    totalSeconds--;
+    const mins = Math.floor(totalSeconds / 60);
+    const secs = totalSeconds % 60;
+    const formatted = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')} remaining`;
+    if (timerDisplay) timerDisplay.textContent = formatted;
+
+    // Shift to danger when under 2 minutes
+    if (totalSeconds < 120 && timerBadge && !timerBadge.classList.contains('text-status-danger')) {
+      timerBadge.classList.remove('bg-status-warning/15', 'text-status-warning');
+      timerBadge.classList.add('bg-error/15', 'text-status-danger');
+    }
+  }, 1000);
+
+  // Capture Button Interaction Simulation
+  const captureBtn = document.getElementById('capture-btn');
+  const successOverlay = document.getElementById('capture-success-overlay');
+  const submitBtn = document.getElementById('submit-btn');
+
+  if (captureBtn && successOverlay) {
+    captureBtn.addEventListener('click', () => {
+      // Trigger flash effect
+      successOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      successOverlay.classList.add('opacity-100');
+
+      captureBtn.classList.add('bg-tertiary-fixed/30', 'text-on-tertiary-container');
+      captureBtn.innerHTML = `
+        <span class="material-symbols-outlined text-on-tertiary-container text-[20px]">check_circle</span>
+        <span class="font-label-lg text-label-lg font-semibold text-on-tertiary-container">Proof Locked & Authenticated</span>
+      `;
+
+      if (submitBtn) {
+        submitBtn.classList.remove('bg-tertiary-fixed');
+        submitBtn.classList.add('bg-secondary', 'text-on-secondary', 'shadow-xl');
+        submitBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[22px]">verified</span>
+          <span>Submit Instant Verification</span>
+        `;
+      }
+    });
+  }
+
+  // Camera Flip Feedback
+  const toggleBtn = document.getElementById('toggle-camera-btn');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const icon = toggleBtn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.classList.add('rotate-180', 'transition-transform', 'duration-300');
+        setTimeout(() => icon.classList.remove('rotate-180'), 300);
+      }
+    });
+  }
+</script></main></body></html>

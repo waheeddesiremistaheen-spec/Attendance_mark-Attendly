@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Attendly Academic Portal</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-container":"#7c839b","on-surface-variant":"#45464d","surface-white":"#FFFFFF","surface-container":"#eceef0","on-background":"#191c1e","tertiary-container":"#002113","surface-dim":"#d8dadc","inverse-on-surface":"#eff1f3","secondary-fixed":"#e2dfff","tertiary-fixed":"#6ffbbe","on-secondary":"#ffffff","surface-container-high":"#e6e8ea","secondary-fixed-dim":"#c3c0ff","error-container":"#ffdad6","background":"#f7f9fb","inverse-primary":"#bec6e0","primary":"#000000","secondary-container":"#645efb","on-tertiary-fixed":"#002113","surface-container-low":"#f2f4f6","outline":"#76777d","text-muted":"#64748B","surface-container-highest":"#e0e3e5","error":"#ba1a1a","surface-variant":"#e0e3e5","status-warning":"#F59E0B","on-surface":"#191c1e","tertiary-fixed-dim":"#4edea3","on-error":"#ffffff","primary-container":"#131b2e","on-secondary-fixed-variant":"#3323cc","primary-fixed":"#dae2fd","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","on-error-container":"#93000a","inverse-surface":"#2d3133","surface-tint":"#565e74","on-secondary-container":"#fffbff","secondary":"#4b41e1","on-tertiary-fixed-variant":"#005236","on-tertiary-container":"#009668","on-primary-fixed-variant":"#3f465c","surface":"#f7f9fb","on-secondary-fixed":"#0f0069","on-primary":"#ffffff","outline-variant":"#c6c6cd","on-primary-fixed":"#131b2e","tertiary":"#000000","border-subtle":"#E2E8F0","surface-bright":"#f7f9fb","status-danger":"#EF4444","primary-fixed-dim":"#bec6e0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","margin-mobile":"1rem","space-xl":"2rem","space-xs":"0.25rem","space-md":"1rem","margin":"1.5rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","gutter":"1rem"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"label-lg":["Inter"],"label-md":["Inter"],"title-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"display-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"stat-counter":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"]},"fontSize":{"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"display-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"stat-counter":["36px",{"lineHeight":"44px","fontWeight":"800"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md"><div class="w-11 h-11 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-lg text-headline-lg shadow-sm"><span class="material-symbols-outlined text-[26px]">school</span></div><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-title-md text-title-md tracking-tight text-on-surface">Babcock University</span><span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 rounded">LT-2</span></div><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Attendly Academic Portal</span></div></div><div class="hidden xl:flex items-center gap-space-md pl-space-md bg-surface-container-low py-1.5 px-space-md rounded-xl"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Course:</span><span class="font-title-md text-title-md text-primary font-headline-md">CSC 201</span></div><span class="w-1 h-1 rounded-full bg-outline"></span><span class="font-label-md text-label-md text-on-surface-variant">Data Structures &amp; Algorithms</span><span class="w-1 h-1 rounded-full bg-outline"></span><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">location_on</span><span class="font-label-md text-label-md">Science Complex LT-2</span></div></div></div><nav class="flex items-center gap-space-xs bg-surface-container-lowest p-1 rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="bg-primary text-on-primary font-title-md rounded-xl shadow-sm"><a aria-current="page" class="px-space-md py-space-sm transition-all bg-primary text-on-primary font-title-md rounded-xl shadow-sm" data-path="live-projector-display" href="#">Live Projection</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="attendee-roll-feed" href="#">Live Feed</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="geofence-telemetry" href="#">Telemetry</a><a class="px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="session-summary" href="#">Summary</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-tertiary-container">Active Check-in</span></div><div class="flex items-center gap-1 pl-space-xs"><span class="material-symbols-outlined text-[18px] text-outline">timer</span><span class="font-title-md text-title-md tabular-nums text-on-surface">14:32</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-4rem)] flex flex-col"><div class="flex flex-col w-full">
+<!-- Auditorium Projector Ambient Canvas with Dynamic Theme Engine Support -->
+<div class="w-full transition-colors duration-300 bg-[#090D16] text-[#FFFFFF] px-gutter py-space-md lg:py-space-lg flex flex-col gap-space-lg" id="projector-canvas">
+<!-- Top Projector Utility Bar & Alert Status -->
+<div class="flex flex-wrap items-center justify-between gap-space-md transition-colors duration-300 bg-[#151D2F]/90 border border-slate-700/50 px-space-lg py-space-sm rounded-xl shadow-lg" id="top-utility-bar">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-emerald-950/80 border border-emerald-500/30">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-emerald-300 font-bold">Auditorium Projector Cast Active</span>
+</div>
+<span class="text-slate-400 font-label-md text-label-md hidden sm:inline">•</span>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-slate-300" id="geofence-status-text">
+<span class="material-symbols-outlined text-[16px] text-emerald-400">radar</span>
+<span>50m GPS Radius Active • Science Complex LT-2 Anchor Validated</span>
+</div>
+</div>
+<div class="flex items-center flex-wrap gap-space-md ml-auto">
+<!-- Projector Theme Switch (Auditorium Dark vs High-Contrast Light) -->
+<div class="flex items-center p-1 rounded-lg bg-black/40 border border-slate-700/60 shadow-inner" id="theme-switch-group">
+<button class="flex items-center gap-1.5 px-space-sm py-1 rounded-md text-xs font-semibold transition-all duration-200 bg-secondary-container text-white shadow-sm" id="theme-dark-btn" title="Dark theater projector mode" type="button">
+<span class="material-symbols-outlined text-[15px]">dark_mode</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Theater Dark</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-sm py-1 rounded-md text-xs font-semibold transition-all duration-200 text-slate-300 hover:text-white" id="theme-light-btn" title="High contrast daytime projector mode" type="button">
+<span class="material-symbols-outlined text-[15px]">light_mode</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">High-Contrast Light</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs bg-slate-800/80 border border-slate-700/60 px-space-md py-1 rounded-lg" id="lock-countdown-badge">
+<span class="material-symbols-outlined text-[18px] text-status-warning animate-pulse">lock_clock</span>
+<span class="font-title-md text-title-md tabular-nums tracking-wide text-white">07:40</span>
+<span class="font-label-sm text-label-sm uppercase text-slate-300 pl-1">Strict Lock Active</span>
+</div>
+<!-- Controls for Lecturer -->
+<button class="flex items-center gap-space-xs bg-surface-white text-primary px-space-md py-1.5 rounded-lg font-label-md text-label-md hover:bg-slate-100 transition-all shadow-sm border border-slate-200 font-semibold" id="fullscreen-btn">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+<span class="hidden md:inline">Full Projection</span>
+</button>
+<button class="flex items-center gap-space-xs bg-error-container text-on-error-container px-space-md py-1.5 rounded-lg font-label-md text-label-md hover:bg-error hover:text-on-error transition-all shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span class="hidden md:inline">Emergency Lock</span>
+</button>
+</div>
+</div>
+<!-- Main Grid: QR Display (Asymmetric 7:5 ratio for projector dominance) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- LEFT: Massive QR Code Centerpiece (Col 7) -->
+<div class="lg:col-span-7 bg-surface-white text-on-surface rounded-xl p-space-lg lg:p-space-xl flex flex-col items-center justify-center relative shadow-xl overflow-hidden transition-all duration-300" id="qr-main-card">
+<!-- Ambient corner watermarks -->
+<div class="absolute top-4 left-4 flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-primary rounded-xs"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Target Zone Alpha</span>
+</div>
+<div class="absolute top-4 right-4 flex items-center gap-1 font-label-sm text-label-sm tabular-nums text-outline">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">verified</span>
+<span>v4.2 Anti-Proxy Secure</span>
+</div>
+<!-- QR Canvas Enclosure with high optical boundary lines -->
+<div class="relative my-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-2xl flex items-center justify-center border border-slate-200/80" id="qr-enclosure">
+<!-- Outer circular timer progress ring (Visualizing SHA refresh) -->
+<div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 flex items-center justify-center p-space-sm bg-surface-white rounded-xl">
+<!-- SVG Rotating & Shrinking Hash Countdown Ring -->
+<svg class="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewbox="0 0 100 100">
+<circle class="text-surface-container" cx="50" cy="50" fill="none" r="47" stroke="currentColor" stroke-width="2"></circle>
+<circle class="text-secondary-container transition-all duration-1000 ease-linear" cx="50" cy="50" fill="none" id="countdown-circle" r="47" stroke="currentColor" stroke-dasharray="295.3" stroke-dashoffset="60" stroke-linecap="round" stroke-width="2.5"></circle>
+</svg>
+<!-- Vector Stylized High-Density Anti-Proxy QR (Geometric SVG representation) -->
+<div class="relative w-full h-full p-4 flex items-center justify-center">
+<svg class="w-full h-full text-primary" fill="currentColor" viewbox="0 0 240 240">
+<!-- Outer Corner Finder 1 (Top Left) -->
+<rect fill="none" height="56" rx="6" stroke="currentColor" stroke-width="10" width="56" x="10" y="10"></rect>
+<rect fill="currentColor" height="28" rx="3" width="28" x="24" y="24"></rect>
+<!-- Outer Corner Finder 2 (Top Right) -->
+<rect fill="none" height="56" rx="6" stroke="currentColor" stroke-width="10" width="56" x="174" y="10"></rect>
+<rect fill="currentColor" height="28" rx="3" width="28" x="188" y="24"></rect>
+<!-- Outer Corner Finder 3 (Bottom Left) -->
+<rect fill="none" height="56" rx="6" stroke="currentColor" stroke-width="10" width="56" x="10" y="174"></rect>
+<rect fill="currentColor" height="28" rx="3" width="28" x="24" y="188"></rect>
+<!-- Dynamic Density Matrix Nodes -->
+<!-- Top Row Patterns -->
+<rect height="10" rx="1.5" width="10" x="80" y="12"></rect>
+<rect height="10" rx="1.5" width="18" x="96" y="12"></rect>
+<rect height="10" rx="1.5" width="10" x="122" y="12"></rect>
+<rect height="10" rx="1.5" width="20" x="140" y="12"></rect>
+<rect height="12" rx="2" width="12" x="76" y="30"></rect>
+<rect height="12" rx="2" width="14" x="100" y="30"></rect>
+<rect height="24" rx="2" width="14" x="124" y="30"></rect>
+<rect height="12" rx="2" width="14" x="146" y="30"></rect>
+<rect height="14" rx="2" width="26" x="76" y="52"></rect>
+<rect height="14" rx="2" width="18" x="110" y="52"></rect>
+<rect height="14" rx="2" width="24" x="136" y="52"></rect>
+<!-- Middle Crossbars & Floating Data Blocks -->
+<rect height="20" rx="2" width="14" x="12" y="78"></rect>
+<rect height="12" rx="2" width="30" x="36" y="78"></rect>
+<rect height="18" rx="2" width="18" x="76" y="76"></rect>
+<rect height="12" rx="2" width="36" x="102" y="76"></rect>
+<rect height="28" rx="2" width="14" x="146" y="76"></rect>
+<rect height="12" rx="2" width="24" x="170" y="76"></rect>
+<rect height="20" rx="2" width="26" x="204" y="76"></rect>
+<rect height="12" rx="2" width="28" x="12" y="108"></rect>
+<rect height="20" rx="2" width="18" x="48" y="100"></rect>
+<rect height="34" rx="2" width="20" x="74" y="102"></rect>
+<rect height="24" rx="2" width="18" x="146" y="112"></rect>
+<rect height="18" rx="2" width="20" x="174" y="98"></rect>
+<rect height="14" rx="2" width="28" x="202" y="106"></rect>
+<rect height="32" rx="2" width="18" x="12" y="130"></rect>
+<rect height="14" rx="2" width="28" x="38" y="130"></rect>
+<rect height="20" rx="2" width="14" x="102" y="124"></rect>
+<rect height="14" rx="2" width="14" x="124" y="124"></rect>
+<rect height="14" rx="2" width="30" x="170" y="126"></rect>
+<rect height="32" rx="2" width="22" x="208" y="130"></rect>
+<rect height="10" rx="1.5" width="14" x="38" y="152"></rect>
+<rect height="14" rx="2" width="26" x="58" y="150"></rect>
+<rect height="14" rx="2" width="20" x="92" y="150"></rect>
+<rect height="18" rx="2" width="28" x="122" y="146"></rect>
+<rect height="14" rx="2" width="20" x="158" y="150"></rect>
+<rect height="10" rx="1.5" width="14" x="186" y="150"></rect>
+<!-- Bottom Pattern Fillers -->
+<rect height="18" rx="2" width="24" x="76" y="174"></rect>
+<rect height="26" rx="2" width="16" x="108" y="174"></rect>
+<rect height="14" rx="2" width="24" x="132" y="174"></rect>
+<rect height="18" rx="2" width="22" x="164" y="174"></rect>
+<rect height="14" rx="2" width="36" x="194" y="174"></rect>
+<rect height="28" rx="2" width="14" x="76" y="200"></rect>
+<rect height="20" rx="2" width="24" x="100" y="208"></rect>
+<rect height="32" rx="2" width="20" x="132" y="196"></rect>
+<rect height="16" rx="2" width="32" x="160" y="202"></rect>
+<rect height="30" rx="2" width="30" x="200" y="198"></rect>
+<!-- Central Verification Badge Cutout (High visibility shield) -->
+<rect fill="#FFFFFF" height="52" rx="12" width="52" x="94" y="94"></rect>
+<circle cx="120" cy="120" fill="#4B41E1" r="20"></circle>
+</svg>
+<!-- Center Icon Over the QR -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-on-secondary text-[24px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hash Refresh Indicator & Token Details -->
+<div class="w-full flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-lg border border-slate-200" id="hash-timer-box">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface-variant">
+              Hash auto-cycling in <strong class="text-primary font-headline-md text-title-md tabular-nums" id="refresh-timer">03s</strong>
+</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md bg-surface-container px-space-md py-space-xs rounded-lg text-on-surface border border-slate-200" id="hash-code-box">
+<span class="material-symbols-outlined text-[16px] text-outline">key</span>
+<span class="text-outline uppercase">SHA:</span>
+<code class="font-title-md text-title-md tracking-wider text-secondary font-bold" id="hash-slice">9f4b-e82a-049c</code>
+</div>
+</div>
+<!-- Security Disclaimer Bar -->
+<div class="mt-space-md text-center">
+<p class="font-label-sm text-label-sm text-outline tracking-wide uppercase">
+            Anti-Proxy Dynamic Hash v4.2 • Scans expire in 10s • Screenshotting &amp; Replay Blocked
+          </p>
+</div>
+</div>
+<!-- RIGHT: Large Secondary PIN & Live Metrics (Col 5) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg justify-between">
+<!-- High-Visibility Fallback PIN Card -->
+<div class="bg-surface-white text-on-surface rounded-xl p-space-lg flex flex-col gap-space-sm shadow-xl transition-all duration-300" id="pin-card">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">dialpad</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline font-semibold">Auditorium Fallback PIN</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-space-sm py-0.5 rounded text-on-surface-variant font-medium">Tier 3 Visibility</span>
+</div>
+<div class="text-outline font-body-sm text-body-sm">
+            For students in back rows or low-light zones unable to focus QR:
+          </div>
+<!-- Gigantic PIN Display Blocks -->
+<div class="bg-inverse-surface text-inverse-on-surface rounded-xl p-space-md my-space-xs flex items-center justify-center gap-space-md shadow-inner transition-colors duration-300" id="pin-display-box">
+<div class="font-stat-counter text-stat-counter tracking-widest tabular-nums text-emerald-400 font-black">
+              842
+            </div>
+<span class="text-outline text-headline-lg font-bold">–</span>
+<div class="font-stat-counter text-stat-counter tracking-widest tabular-nums text-emerald-400 font-black">
+              910
+            </div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Valid in Lecture Hall LT-2 only</span>
+<span class="flex items-center gap-1 text-emerald-600 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Synchronized</span>
+</div>
+</div>
+<!-- Real-Time Attendance Statistics Card -->
+<div class="bg-surface-white text-on-surface rounded-xl p-space-lg flex flex-col gap-space-md shadow-xl transition-all duration-300" id="quorum-card">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Live Quorum Tracker</span>
+<span class="font-label-md text-label-md px-space-sm py-0.5 rounded-full bg-surface-container-low text-secondary font-bold">82.9% Quorum</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-stat-counter text-stat-counter text-primary font-black">68</span>
+<span class="font-headline-lg text-headline-lg text-outline">/ 82</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Enrolled Students Present</span>
+</div>
+<!-- Heavy Progress Track -->
+<div class="w-full bg-surface-container-high h-4 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full transition-all duration-700" style="width: 82.9%;"></div>
+</div>
+<!-- Micro Stat Breakdown -->
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg border border-slate-200" id="stat-subcard-1">
+<span class="font-label-sm text-label-sm text-outline uppercase block font-semibold">Validated GPS</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">68 Devices</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg border border-slate-200" id="stat-subcard-2">
+<span class="font-label-sm text-label-sm text-outline uppercase block font-semibold">Pending Check-in</span>
+<span class="font-title-md text-title-md text-status-warning font-bold">14 Seats</span>
+</div>
+</div>
+</div>
+<!-- Student Instructions Card (3 clear steps) -->
+<div class="bg-surface-white text-on-surface rounded-xl p-space-lg shadow-xl flex flex-col gap-space-sm transition-all duration-300" id="instructions-card">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Check-In Instructions</span>
+<div class="grid grid-cols-3 gap-space-sm mt-space-xs">
+<div class="flex flex-col gap-1 p-space-sm bg-surface-container-low rounded-lg instruction-box border border-transparent">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Open App</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Launch Attendly on your phone.</p>
+</div>
+<div class="flex flex-col gap-1 p-space-sm bg-surface-container-low rounded-lg instruction-box border border-transparent">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">2</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Scan or PIN</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Scan QR or enter code <span class="font-bold">842-910</span>.</p>
+</div>
+<div class="flex flex-col gap-1 p-space-sm bg-surface-container-low rounded-lg instruction-box border border-transparent">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">3</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Stay in Zone</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Keep GPS &amp; Wi-Fi ON in LT-2.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Live Verification Ticker / Real-time Activity Stream -->
+<div class="w-full bg-[#151D2F] border border-slate-700/60 rounded-xl p-space-md shadow-xl flex flex-col md:flex-row items-center gap-space-md overflow-hidden transition-colors duration-300" id="bottom-ticker-bar">
+<!-- Ticker Title -->
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-slate-800/80 border border-slate-700/50 rounded-lg shrink-0" id="ticker-badge">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-slate-100 font-bold">Live Stream:</span>
+</div>
+<!-- Scrolling Feed Items Container -->
+<div class="flex-1 w-full overflow-hidden whitespace-nowrap relative" id="ticker-container">
+<div class="inline-flex items-center gap-space-xl animate-[marquee_25s_linear_infinite]">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 bg-surface-container-lowest/10 rounded-full text-slate-100 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-emerald-400">check_circle</span>
+<span class="font-bold">Tunde Adeleke</span>
+<span class="text-slate-400">(BU/21/0492)</span>
+<span class="text-emerald-300">• Verified 12s ago</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 bg-surface-container-lowest/10 rounded-full text-slate-100 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-emerald-400">check_circle</span>
+<span class="font-bold">Amina Yusuf</span>
+<span class="text-slate-400">(BU/21/0512)</span>
+<span class="text-emerald-300">• Verified 24s ago</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 bg-surface-container-lowest/10 rounded-full text-slate-100 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-emerald-400">check_circle</span>
+<span class="font-bold">Sarah Olatunji</span>
+<span class="text-slate-400">(BU/21/0819)</span>
+<span class="text-emerald-300">• Verified 38s ago</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 bg-surface-container-lowest/10 rounded-full text-slate-100 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-emerald-400">check_circle</span>
+<span class="font-bold">Chinedu Eze</span>
+<span class="text-slate-400">(BU/21/0104)</span>
+<span class="text-emerald-300">• Verified 45s ago</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 bg-surface-container-lowest/10 rounded-full text-slate-100 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-emerald-400">check_circle</span>
+<span class="font-bold">Khadija Bello</span>
+<span class="text-slate-400">(BU/21/0993)</span>
+<span class="text-emerald-300">• Verified 58s ago</span>
+</div>
+</div>
+</div>
+<!-- Live Speed Gauge Indicator -->
+<div class="shrink-0 flex items-center gap-1 font-label-sm text-label-sm text-slate-300" id="sync-speed-gauge">
+<span class="material-symbols-outlined text-[16px] text-emerald-400">bolt</span>
+<span>Avg sync: <strong class="text-white">0.4s</strong></span>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Logic for Projector Dynamic Updates & Theme Engine -->
+<script>
+    (function initProjectorDisplay() {
+      let secondsLeft = 3;
+      const timerElement = document.getElementById('refresh-timer');
+      const hashElement = document.getElementById('hash-slice');
+      const circleElement = document.getElementById('countdown-circle');
+      const fullscreenBtn = document.getElementById('fullscreen-btn');
+
+      const sampleHashes = [
+        '9f4b-e82a-049c',
+        'c710-d83f-410a',
+        'e21a-689b-90df',
+        '33ab-01fe-ca74',
+        '78bc-5d29-11fa'
+      ];
+      let hashIndex = 0;
+      const maxSeconds = 6;
+      const totalCircumference = 295.3;
+
+      setInterval(() => {
+        secondsLeft--;
+        if (secondsLeft < 0) {
+          secondsLeft = maxSeconds;
+          hashIndex = (hashIndex + 1) % sampleHashes.length;
+          if (hashElement) {
+            hashElement.textContent = sampleHashes[hashIndex];
+          }
+        }
+
+        if (timerElement) {
+          timerElement.textContent = '0' + secondsLeft + 's';
+        }
+
+        if (circleElement) {
+          const offset = totalCircumference - (secondsLeft / maxSeconds) * totalCircumference;
+          circleElement.style.strokeDashoffset = offset;
+        }
+      }, 1000);
+
+      // Fullscreen projector presentation toggle
+      if (fullscreenBtn) {
+        fullscreenBtn.addEventListener('click', () => {
+          if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen().catch(() => {});
+          } else {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            }
+          }
+        });
+      }
+
+      // Projector Theme Engine: Theater Dark vs High-Contrast Light
+      const darkBtn = document.getElementById('theme-dark-btn');
+      const lightBtn = document.getElementById('theme-light-btn');
+      const projectorCanvas = document.getElementById('projector-canvas');
+      const topUtilityBar = document.getElementById('top-utility-bar');
+      const bottomTickerBar = document.getElementById('bottom-ticker-bar');
+      const pinCard = document.getElementById('pin-card');
+      const qrMainCard = document.getElementById('qr-main-card');
+      const quorumCard = document.getElementById('quorum-card');
+      const instructionsCard = document.getElementById('instructions-card');
+      const pinDisplayBox = document.getElementById('pin-display-box');
+      const geofenceText = document.getElementById('geofence-status-text');
+      const lockBadge = document.getElementById('lock-countdown-badge');
+      const tickerBadge = document.getElementById('ticker-badge');
+      const syncSpeed = document.getElementById('sync-speed-gauge');
+      const statSub1 = document.getElementById('stat-subcard-1');
+      const statSub2 = document.getElementById('stat-subcard-2');
+      const instructionBoxes = document.querySelectorAll('.instruction-box');
+
+      function setTheme(isLight) {
+        if (isLight) {
+          // Active state on switch buttons
+          lightBtn.className = "flex items-center gap-1.5 px-space-sm py-1 rounded-md text-xs font-bold transition-all duration-200 bg-black text-white shadow-sm";
+          darkBtn.className = "flex items-center gap-1.5 px-space-sm py-1 rounded-md text-xs font-semibold transition-all duration-200 text-slate-600 hover:text-black";
+          
+          // High-Contrast Light Styles
+          projectorCanvas.className = "w-full transition-colors duration-300 bg-[#F4F6F9] text-[#0A0D14] px-gutter py-space-md lg:py-space-lg flex flex-col gap-space-lg";
+          
+          topUtilityBar.className = "flex flex-wrap items-center justify-between gap-space-md transition-colors duration-300 bg-white border-2 border-slate-900 px-space-lg py-space-sm rounded-xl shadow-md";
+          bottomTickerBar.className = "w-full bg-white border-2 border-slate-900 rounded-xl p-space-md shadow-md flex flex-col md:flex-row items-center gap-space-md overflow-hidden transition-colors duration-300";
+          
+          if (geofenceText) geofenceText.className = "flex items-center gap-space-xs font-label-md text-label-md text-slate-900 font-bold";
+          if (lockBadge) lockBadge.className = "flex items-center gap-space-xs bg-slate-100 border border-slate-900 px-space-md py-1 rounded-lg text-slate-900";
+          if (tickerBadge) tickerBadge.className = "flex items-center gap-space-xs px-space-md py-space-xs bg-black text-white rounded-lg shrink-0";
+          if (syncSpeed) syncSpeed.className = "shrink-0 flex items-center gap-1 font-label-sm text-label-sm text-slate-900 font-semibold";
+
+          // Cards get bold high-contrast borders for bright ambient daylight projectors
+          [qrMainCard, pinCard, quorumCard, instructionsCard].forEach(card => {
+            if (card) {
+              card.classList.remove('border-slate-700/60');
+              card.classList.add('border-2', 'border-slate-900', 'shadow-lg');
+            }
+          });
+
+          if (pinDisplayBox) {
+            pinDisplayBox.className = "bg-black text-white rounded-xl p-space-md my-space-xs flex items-center justify-center gap-space-md border-2 border-slate-900";
+          }
+
+          if (statSub1) statSub1.className = "bg-white p-space-sm rounded-lg border-2 border-slate-900";
+          if (statSub2) statSub2.className = "bg-white p-space-sm rounded-lg border-2 border-slate-900";
+          
+          instructionBoxes.forEach(b => {
+            b.className = "flex flex-col gap-1 p-space-sm bg-slate-100 rounded-lg instruction-box border border-slate-300";
+          });
+          
+          const themeSwitchGroup = document.getElementById('theme-switch-group');
+          if (themeSwitchGroup) themeSwitchGroup.className = "flex items-center p-1 rounded-lg bg-slate-100 border-2 border-slate-900 shadow-sm";
+
+        } else {
+          // Active state on switch buttons (Theater Dark)
+          darkBtn.className = "flex items-center gap-1.5 px-space-sm py-1 rounded-md text-xs font-semibold transition-all duration-200 bg-secondary-container text-white shadow-sm";
+          lightBtn.className = "flex items-center gap-1.5 px-space-sm py-1 rounded-md text-xs font-semibold transition-all duration-200 text-slate-300 hover:text-white";
+
+          // Theater Dark Styles
+          projectorCanvas.className = "w-full transition-colors duration-300 bg-[#090D16] text-[#FFFFFF] px-gutter py-space-md lg:py-space-lg flex flex-col gap-space-lg";
+          
+          topUtilityBar.className = "flex flex-wrap items-center justify-between gap-space-md transition-colors duration-300 bg-[#151D2F]/90 border border-slate-700/50 px-space-lg py-space-sm rounded-xl shadow-lg";
+          bottomTickerBar.className = "w-full bg-[#151D2F] border border-slate-700/60 rounded-xl p-space-md shadow-xl flex flex-col md:flex-row items-center gap-space-md overflow-hidden transition-colors duration-300";
+          
+          if (geofenceText) geofenceText.className = "flex items-center gap-space-xs font-label-md text-label-md text-slate-300";
+          if (lockBadge) lockBadge.className = "flex items-center gap-space-xs bg-slate-800/80 border border-slate-700/60 px-space-md py-1 rounded-lg text-white";
+          if (tickerBadge) tickerBadge.className = "flex items-center gap-space-xs px-space-md py-space-xs bg-slate-800/80 border border-slate-700/50 rounded-lg shrink-0";
+          if (syncSpeed) syncSpeed.className = "shrink-0 flex items-center gap-1 font-label-sm text-label-sm text-slate-300";
+
+          [qrMainCard, pinCard, quorumCard, instructionsCard].forEach(card => {
+            if (card) {
+              card.classList.remove('border-2', 'border-slate-900');
+            }
+          });
+
+          if (pinDisplayBox) {
+            pinDisplayBox.className = "bg-inverse-surface text-inverse-on-surface rounded-xl p-space-md my-space-xs flex items-center justify-center gap-space-md shadow-inner transition-colors duration-300";
+          }
+
+          if (statSub1) statSub1.className = "bg-surface-container-lowest p-space-sm rounded-lg border border-slate-200";
+          if (statSub2) statSub2.className = "bg-surface-container-lowest p-space-sm rounded-lg border border-slate-200";
+
+          instructionBoxes.forEach(b => {
+            b.className = "flex flex-col gap-1 p-space-sm bg-surface-container-low rounded-lg instruction-box border border-transparent";
+          });
+
+          const themeSwitchGroup = document.getElementById('theme-switch-group');
+          if (themeSwitchGroup) themeSwitchGroup.className = "flex items-center p-1 rounded-lg bg-black/40 border border-slate-700/60 shadow-inner";
+        }
+      }
+
+      if (darkBtn && lightBtn) {
+        darkBtn.addEventListener('click', () => setTheme(false));
+        lightBtn.addEventListener('click', () => setTheme(true));
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-space-md"><span>Institutional Host: <strong>Department of Computer Science</strong></span><span class="hidden md:inline w-1 h-1 rounded-full bg-outline"></span><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>Geofence Strictness: Level 3 (Beacon + GPS 18m)</span></div><div class="flex items-center gap-space-lg"><span>Attendly Auditorium Engine v3.4.1</span><span class="font-body-sm text-body-sm text-outline">© 2024 Babcock University ICT Directorate</span></div></div></footer></body></html>
