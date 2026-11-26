@@ -236,7 +236,7 @@ Assumptions
 High-Level Technical Considerations
 
 - Frontend: Mobile app and a simple web dashboard for lecturers and admins.
-- Backend: FastAPI.
+- Backend: RestApi.
 - Database: PostgreSQL.
 - Authentication: University ID.
 - Hosting: Cloud (such as the university server or AWS).
